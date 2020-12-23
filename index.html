@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang=en>
 <head>
-<meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge">
+<meta charset=utf-8>
 <meta name=viewport content="width=device-width, initial-scale=1.0">
+<link rel="preload" href="/images/dp_male.svg" as="image">
+<link rel="preload" href="js/particles.min.js" as="script">
+<link rel="preload" href="js/particle.js" as="script">
 <link rel=icon type=image/png href=./favicon.ico><link rel=apple-touch-icon href=./favicon.ico>
 <title>Fynks</title>
-<style>*{ box-sizing:border-box; text-decoration:none; color:#0ff; text-align:center; font-weight:100} html{ scroll-behavior:smooth} body{ background-color:#2e393b} .main{ height:80vh; display:flex; flex-direction:column; justify-content:center; align-items:center} .card{ box-shadow:0 4px 8px 0 #00000033; background-color:#485759; border-radius:20px; width:96%; padding:12px; max-width:40rem} h3{ line-height:3rem} span{ background-color:#58464652; padding:10px; margin:10px; border-radius:10px; font-size:large} .link a{ margin:20px}a:hover{ box-shadow:12px 16px #31313133; border-radius:12px; padding:6px} @media only screen and (min-width:38em){ .card{ max-width:600px; padding:34px} h3{ line-height:5rem; ]} .link a{ margin:40px}</style>
+<link rel=stylesheet href=/css/home.css>
 </head>
 <body>
-<div class=main>
-<div class=card>
+<div class=parallax-container id=home>
+<div class=parallax>
+<section class=center>
+<div id=particles-js></div>
+</section>
+</div></div>
+<div class=text><span>Fynks</span>
 <div>
-<h1>&#187;&#32;Fynks</h1>
-</div>
-<div class=container>
-<h3><span>#linux</span><span>#html</span><span>#css</span>
-<span>#js</span><span>#php</span><span>#nodeJS</span>
-</h3>
-<h4 class=link>
-<a target=_blank href=https://github.com/Fynks title=github aria-label=github rel=noreferrer><svg xmlns=http://www.w3.org/2000/svg class="icon icon-tabler icon-tabler-brand-github" width=38 height=38 viewBox="0 0 24 24" stroke-width=1.5 stroke=#03A9F4 fill=none stroke-linecap=round stroke-linejoin=round><path stroke=none d="M0 0h24v24H0z" fill=none /><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg></a>
-<a target=_blank href=https://gitlab.com/fynks title=gitlab aria-label=gitlab rel=noreferrer><svg xmlns=http://www.w3.org/2000/svg width=38 height=38 viewBox="0 0 24 24" stroke-width=1.5 stroke=#03A9F4 fill=none stroke-linecap=round stroke-linejoin=round><path stroke=none d="M0 0h24v24H0z" fill=none /><path d="M21 14l-9 7l-9 -7l3 -11l3 7h6l3 -7z" /></svg></a>
-<a href=https://github.com/Fynks/configs title=configs aria-label=configs rel=noreferrer><svg xmlns=http://www.w3.org/2000/svg width=38 height=38 viewBox="0 0 24 24" stroke-width=1.5 stroke=#03A9F4 fill=none stroke-linecap=round stroke-linejoin=round><path stroke=none d="M0 0h24v24H0z" fill=none /><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><circle cx=12 cy=12 r=3 /></svg></a>
-</h4>
-</div>
-</div>
-</div>
+<img src=/images/dp_male.svg alt class=rounded-circle height=200 width=200>
+</div><div>
+<div class=social-icons>
+<a href="https://github.com/Fynks" class=social-icon href target=_blank rel=author><svg xmlns=http://www.w3.org/2000/svg class="icon icon-tabler icon-tabler-brand-github" width=38 height=38 viewBox="0 0 24 24" stroke-width=1 stroke=#6f32be fill=none stroke-linecap=round stroke-linejoin=round><path stroke=none d="M0 0h24v24H0z" fill=none /><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg></a>
+<a href="https://github.com/Fynks" class="social-icon" href target=_blank rel=author><svg xmlns=http://www.w3.org/2000/svg class="icon icon-tabler icon-tabler-brand-gitlab" width=38 height=38 viewBox="0 0 24 24" stroke-width=1 stroke=#6f32be fill=none stroke-linecap=round stroke-linejoin=round><path stroke=none d="M0 0h24v24H0z" fill=none /><path d="M21 14l-9 7l-9 -7l3 -11l3 7h6l3 -7z" /></svg></a>
+<a href="https://github.com/Fynks" class=social-icon href target=_blank rel=author><svg xmlns=http://www.w3.org/2000/svg class="icon icon-tabler icon-tabler-settings" width=38 height=38 viewBox="0 0 24 24" stroke-width=1 stroke=#6f32be fill=none stroke-linecap=round stroke-linejoin=round><path stroke=none d="M0 0h24v24H0z" fill=none /><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><circle cx=12 cy=12 r=3 /></svg></a>
+</div></div></div>
+<script src=js/particles.min.js></script>
+<script src=js/particle.js></script>
 </body>
 </html>
