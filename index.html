@@ -8,7 +8,71 @@
 <link rel="preload" href="js/particle.js" as="script">
 <link rel=icon type=image/png href=./favicon.ico><link rel=apple-touch-icon href=./favicon.ico>
 <title>Fynks</title>
-<link rel=stylesheet href=/css/home.css>
+<style>
+    * {
+  text-align: center;
+  font-weight: 100
+}
+
+#home,
+#particles-js {
+  position: relative;
+  height: 100vh;
+  width: 100%
+}
+
+.section {
+  background-color: #3f19aa;
+  justify-content: center;
+  align-items: center
+}
+.rounded-circle {
+  margin: 1rem
+}
+
+.text {
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute
+}
+
+.social-icons {
+  display: flex;
+  font-size: 20px;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: #fff
+}
+
+.social-icon {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  margin: 7px;
+  border-radius: 50%;
+  box-shadow: 2px 5px 5px #0000004d;
+  text-decoration: none;
+  transition: .3s;
+  padding: 12px
+}
+
+.social-icon:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .16)
+}
+
+a:hover {
+  color: transparent
+}
+
+@media only screen and (min-width:30rem) {
+  .social-icon {
+    margin: 1rem
+  }
+}
+</style>
 </head>
 <body>
 <div class=parallax-container id=home>
