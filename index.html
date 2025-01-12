@@ -7,20 +7,90 @@
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <title>Fynks</title>
-<style>*, *::before, *::after{ box-sizing: border-box; text-align: center; text-decoration: none; color: #fff} body{ font-family: 'Open Sans', sans-serif; background: #17212c; display: grid; place-items: center;} main{ text-transform: uppercase;} header h1{ border-bottom: 0.25rem solid #fff; padding: 0.3rem; margin-top: 10rem; margin-bottom: 0.5rem; font-size: 36px} h4{ border-bottom: 1px solid #fff; padding: 0.3rem; margin-block: 0.5rem; font-size: 18px} .icon{ margin-block: 0.7rem} svg{ stroke:#ffffff;} svg:hover{ stroke: rgba(252, 81, 95, 0.76);}</style>
+<style>
+    *, *::before, *::after { box-sizing: border-box; text-align: center; text-decoration: none; color: #fff; }
+    body { font-family: 'Open Sans', sans-serif; background: #17212c; display: flex; flex-direction: column; align-items: center; margin: 0; }
+    main { text-transform: uppercase; display: flex; flex-direction: column; align-items: center; width: 80%; max-width: 960px; padding: 30px; }
+    header { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 10px 0; margin-bottom: 20px; }
+    header h1 { border-bottom: 0.25rem solid #fff; padding: 0.3rem; margin: 0; font-size: 36px; }
+    h2 { border-bottom: 1px solid #fff; padding: 0.3rem; margin-block: 1.5rem; font-size: 24px; }
+    h4 { border-bottom: 1px solid #fff; padding: 0.3rem; margin-block: 0.5rem; font-size: 18px; }
+    .icon { margin-block: 0.7rem; }
+    svg { stroke: #ffffff; transition: stroke 0.3s ease; }
+    svg:hover { stroke: rgba(252, 81, 95, 0.76); }
+    .badges { display: flex; justify-content: center; flex-wrap: wrap; gap: 2px; margin-bottom: 1.5rem; }
+    .badges img { height: 28px; }
+    .projects { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin-bottom: 2rem; }
+    .projects img { border-radius: 8px; }
+    img { max-width: 100%; height: auto; display: block; margin: 0 auto 1.5rem auto; }
+    .github-link { display: inline-flex; align-items: center; }
+    .github-link svg { width: 40px; height: 40px; }
+    .github-link:hover svg { stroke: rgba(252, 81, 95, 1); }
+    footer { width: 100%; padding: 20px 0; }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        main {
+            width: 95%;
+            padding: 20px;
+        }
+        .projects {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        header {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+    }
+</style>
 </head>
 <body>
 <header>
-<h1>Fynks</h1>
+    <h1>Fynks</h1>
+    <div class="github-link">
+        <a href=https://github.com/fynks aria-label="GitHub Profile">
+            <svg xmlns=http://www.w3.org/2000/svg width=74 height=74 viewBox="0 0 24 24" stroke-width=1.5  fill=none stroke-linecap=round stroke-linejoin=round>
+                <path stroke=none d="M0 0h24v24H0z" fill="none"/>
+                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+            </svg>
+        </a>
+    </div>
 </header>
 <main>
-<h4>Front-end developer</h4>
-<div class=icon>
-<a href=https://github.com/fynks><svg xmlns=http://www.w3.org/2000/svg width=54 height=54 viewBox="0 0 24 24" stroke-width=1.5  fill=none stroke-linecap=round stroke-linejoin=round>
-<path stroke=none d="M0 0h24v24H0z" fill="none"/>
-<path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-</svg></a>
-</div>
+    <img src="https://readme-typing-svg.demolab.com/?lines=Hi+there!;I'm+Fynks;Frontend+Developer;Open+Source+Enthusiast&font=Fira%20Code¢er=true&width=440&height=45&color=f75c7e&vCenter=true&size=22&duration=3000&pause=1000" alt="Introduction">
+
+    <img src="https://github-readme-stats.vercel.app/api?username=fynks&theme=radical&show_icons=true&hide_border=true&count_private=true" alt="GitHub Stats" />
+
+    <img src="https://streak-stats.demolab.com?user=fynks&theme=radical&hide_border=true" alt="GitHub Streak" />
+
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=fynks&theme=radical&hide_border=true&layout=compact" alt="Most Used Languages" />
+
+    <h2>Recent Projects</h2>
+    <div class="projects">
+        <a href="https://github.com/fynks/awesome-android-root">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=fynks&repo=awesome-android-root&theme=radical&hide_border=true" alt="Awesome Android Root Project" />
+        </a>
+        <a href="https://github.com/fynks/debrid-services-comparison">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=fynks&repo=debrid-services-comparison&theme=radical&hide_border=true" alt="Debrid Services Comparison Project" />
+        </a>
+    </div>
+
+    <h2>Technologies & Tools</h2>
+    <div class="badges">
+        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+        <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+        <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+        <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
+    </div>
 </main>
+
 </body>
 </html>
